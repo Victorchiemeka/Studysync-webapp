@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Whitepace-inspired color palette */
+    --background: 0 0% 100%;
+    --foreground: 230 24% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 24% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 24% 15%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 230 24% 15%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 14% 96%;
+    --accent-foreground: 230 24% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+    --radius: 0.75rem;
+    
+    /* Custom Whitepace colors */
+    --primary-blue: 217 91% 60%;
+    --secondary-blue: 213 93% 68%;
+    --accent-yellow: 43 96% 56%;
+    --neutral-100: 220 14% 96%;
+    --neutral-200: 220 13% 91%;
+    --neutral-300: 220 9% 80%;
+    --neutral-600: 220 9% 46%;
+    --neutral-900: 230 24% 15%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+  }
+}
+
+/* Whitepace-inspired design system */
+@layer components {
+  .whitepace-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary-blue)) 0%, hsl(var(--secondary-blue)) 100%);
+  }
+  
+  .whitepace-card {
+    @apply bg-white rounded-2xl shadow-sm border border-neutral-200/50 backdrop-blur-sm;
+  }
+  
+  .whitepace-button-primary {
+    @apply bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium rounded-xl px-6 py-3 transition-all duration-200 shadow-lg hover:shadow-xl;
+  }
+  
+  .whitepace-button-secondary {
+    @apply bg-white text-neutral-700 font-medium rounded-xl px-6 py-3 border border-neutral-200 hover:border-neutral-300 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .whitepace-text-hero {
+    @apply text-4xl md:text-6xl font-bold leading-tight tracking-tight;
+  }
+  
+  .whitepace-text-heading {
+    @apply text-2xl md:text-3xl font-semibold leading-tight tracking-tight;
+  }
+  
+  .whitepace-text-body {
+    @apply text-base leading-relaxed text-neutral-600;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
