@@ -6,3 +6,4 @@ Developers
 ----------
 
 Richard Ortiz-Caballero
+Eljude Obsaint 
