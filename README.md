@@ -5,6 +5,6 @@ This project was created during sunhacks2025 event.
 Developers
 ----------
 
-Richard Ortiz-Caballero
-Eljude Obsaint 
-Marco Alexis Escobedo
+- Richard Ortiz-Caballero
+- Eljude Obsaint 
+- Marco Alexis Escobedo
