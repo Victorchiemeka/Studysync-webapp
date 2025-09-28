@@ -36,3 +36,5 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+# Ignore local application properties with secrets
+backend/src/main/resources/application.properties
