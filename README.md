@@ -7,3 +7,4 @@ Developers
 
 Richard Ortiz-Caballero
 Eljude Obsaint 
+Marco Alexis Escobedo
