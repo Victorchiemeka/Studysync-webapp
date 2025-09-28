@@ -4,3 +4,5 @@ This project was created during sunhacks2025 event.
 
 Developers
 ----------
+
+Richard Ortiz-Caballero
