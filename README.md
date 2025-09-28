@@ -1,1 +1,1 @@
-STUDY-SYNC Webapp for sunhacks
+Studysync Webapp for sunhacks
